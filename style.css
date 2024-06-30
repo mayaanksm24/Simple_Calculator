@@ -1,0 +1,148 @@
+/* Reset default padding and margin for all elements */
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/* Style for the body of the document */
+body{
+    background-color: #5c8e83;
+    display: grid;
+    height: 100vh;
+    place-items: center;
+}
+
+/* Style for the main calculator container */
+.main{
+    width: 450px;
+    height: 450px;
+    color: white;
+    position: absolute;
+    border: 5px solid black;
+    border-radius: 6px;
+}
+
+/* Style for the text input in the display */
+.main input[type='text']{
+    width: 65%;
+    position: relative;
+    height: 80px;
+    top: 5px;
+    text-align: right;
+    padding: 0 8px;
+    outline: none;
+    font-size: 40px;
+    border: 5px solid black;
+    display: flex;
+    margin: auto;
+    border-radius: 6px;
+    color: black;
+}
+
+/* Style for the clear button in the display */
+#display input[type='button']{
+    width: 90px;
+    padding: 2px;
+    margin: 2px 0px;
+    position: relative;
+    left: 13px;
+    top: 20px;
+    height: 60px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: 0.5s;
+    background-color: #495250;
+    border-radius: 6px;
+    color: white;
+    border: none;
+}
+
+/* Hover effect for the clear button */
+#display input[type='button']:hover{
+    background-color: black;
+}
+
+/* Style for the calculator buttons */
+.main button {
+    width: 90px;
+    padding: 2px;
+    margin: 2px 0px;
+    position: relative;
+    left: 13px;
+    top: 20px;
+    height: 60px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: 0.5s;
+    background-color: #495250;
+    border-radius: 6px;
+    color: white;
+    border: none;
+}
+
+/* Hover effect for all the button */
+.main button:hover {
+    background-color: black;
+}
+
+/* Style for the history section */
+#history{
+    padding-left: 900px;
+    padding-bottom: 500px;
+    font-family: 'Amatic SC', sans-serif;
+    font-size: 50px;
+}
+
+
+#history h2 {
+    font-family: 'Amatic SC', sans-serif;
+    font-size: 50px;
+}
+
+h1 {
+    font-family: 'Amatic SC', sans-serif;
+    font-size: 50px;
+    position: static;
+}
+
+/* Style for the display container */
+#display {
+    display: flex;
+    margin-right: 20px;
+}
+
+/* Style for button group */
+.btn-group button {
+    margin: 5px 2px;
+    padding: 10px 15px;
+    font-size: 20px;
+    border-radius: 6px;
+    border: none;
+}
+
+/* Style for the button container */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+.container .btn-group {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* Style for buttons within button group */
+.container .btn-group button {
+    width: 23%;
+    margin: 10px 0;
+    font-size: 25px;
+}
+
+/* Style for icons within buttons */
+.main button i {
+    font-size: 24px;
+}

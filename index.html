@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css" >
+    <link rel="icon" type="image/x-icon" href="/Calculator/assets/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<body>
+    <h1>Calculator</h1>
+    <!-- Main container for the calculator -->
+    <div class="main">
+        <!-- Display section for the calculator input and clear button -->
+        <div id="display">
+            <input type="text" class="clearinp" id = 'res'>
+            <input type="button" value='C' onclick="clearInput()">
+        </div>
+        <!-- Container for the calculator buttons -->
+        <div class="container">
+            <!-- Row 1: Special buttons -->
+            <button class="btn btn-secondary" onclick="ACclear('AC')"><i class="bi bi-trash"></i></button>
+            <button class="btn btn-secondary" onclick="Back('←')"><i class="bi bi-backspace"></i></button>
+            <button class="btn btn-secondary" onclick="Solve('%')"><i class="bi bi-percent"></i></button>
+            <button class="btn btn-secondary" onclick="Solve('/')"><i class="bi bi-slash-lg"></i></button>
+            <br><!-- Line break for button alignment -->
+
+             <!-- Row 2: Number buttons and multiplication -->
+            <button class="btn btn-secondary" onclick="Solve('7')">7</button>
+            <button class="btn btn-secondary" onclick="Solve('8')">8</button>
+            <button class="btn btn-secondary" onclick="Solve('9')">9</button>
+            <button class="btn btn-secondary" onclick="Solve('*')"><i class="bi bi-x-lg"></i></button>
+            <br>
+
+            <!-- Row 3: Number buttons and subtraction -->
+            <button class="btn btn-secondary" onclick="Solve('4')">4</button>
+            <button class="btn btn-secondary" onclick="Solve('5')">5</button>
+            <button class="btn btn-secondary" onclick="Solve('6')">6</button>
+            <button class="btn btn-secondary" onclick="Solve('-')"><i class="bi bi-dash-lg"></i></button>
+            <br>
+
+            <!-- Row 4: Number buttons and addition -->
+            <button class="btn btn-secondary" onclick="Solve('1')">1</button>
+            <button class="btn btn-secondary" onclick="Solve('2')">2</button>
+            <button class="btn btn-secondary" onclick="Solve('3')">3</button>
+            <button class="btn btn-secondary" onclick="Solve('+')"><i class="bi bi-plus-lg"></i></button>
+            <br>
+
+            <!-- Row 5: More number buttons, decimal, and equals -->
+            <button class="btn btn-secondary" onclick="Solve('00')">00</button>
+            <button class="btn btn-secondary" onclick="Solve('0')">0</button>
+            <button class="btn btn-secondary" onclick="Solve('.')"><i class="bi bi-dot"></i></button>
+            <button class="btn btn-secondary" onclick="Result()">=<i class="bi bi-equals"></i></button>
+        </div>
+    </div>
+    <!-- Section for displaying the calculation history -->
+    <div id="history">
+        <h2>History</h2>
+        <!-- History content will be appended here by JavaScript -->
+    </div>
+    
+    <!-- Link to the external JavaScript file -->
+    <script src = 'Calc.js' ></script>   
+</body>
+</html>
